@@ -18,7 +18,7 @@ export default function Faq() {
                     />
                     <FaqQuestion 
                         question={"Who can attend?"} 
-                        answer={`You are eligible to participate in QuHacks 2025 if you currently attend middle or high school. If you have already graduated but would still like to attend the event, please consider volunteering or mentoring for the event! Send us an email at info@quhacks.tech for more information on contributing to QuHacks, or if you have any questions about our eligibility.`}
+                        answer={`You are eligible to participate in QuHacks 2026 if you currently attend middle or high school. If you have already graduated but would still like to attend the event, please consider volunteering or mentoring for the event! Send us an email at info@quhacks.tech for more information on contributing to QuHacks, or if you have any questions about our eligibility.`}
                     />
                     <FaqQuestion 
                         question={"How much does QuHacks cost?"} 
@@ -36,7 +36,7 @@ export default function Faq() {
                     />
                     <FaqQuestion 
                         question={"Where is QuHacks?"} 
-                        answer={`QuHacks will be held at the Johns Hopkins Applied Physics Laboratory this year, in Building 201. APL's Building 201 is located at 11091 Johns Hopkins Rd, Fulton, MD 20723!`}
+                        answer={`QuHacks 2026's location is currently being determined and will be released as soon as possible!`}
                     />
                     <FaqQuestion 
                         question={"Can I use past projects?"} 
