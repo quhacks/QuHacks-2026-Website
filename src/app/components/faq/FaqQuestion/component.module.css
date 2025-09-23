@@ -1,0 +1,37 @@
+.card {
+    border: 1px solid var(--text-accent);
+}
+
+.btn {
+    width: 100%;
+    background-color: var(--background-accent);
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    text-align: left;
+    font-family: monospace;
+    font-size: 1.25rem;
+    font-style: italic;
+    border-bottom: 1px solid var(--text-accent);
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 80%;
+}
+
+
+.text {
+    padding: 1rem;
+}
+
+.textHidden {
+    height: 0;
+    padding: 0;
+}
+
+
+.textBase {
+    transition: 0.25s;
+    overflow: hidden;
+}

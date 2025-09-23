@@ -1,0 +1,72 @@
+.aboutImg {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+}
+
+.aboutImg>img {
+    max-width: 100%;
+    box-shadow: 10px 10px 0px -2px var(--background-accent);
+}
+
+.learnMore {
+    padding: 0;
+    font-size: 1rem;
+    border: 1px solid var(--text-accent);
+    padding: 0.5rem;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-family: monospace;
+    text-shadow: 0 0 10px var(--title-glow), 0 0 15px var(--title-glow), 0 0 20px var(--title-glow), 0 0 25px var(--title-glow), 0 0 30px var(--title-glow), 0 0 35px var(--title-glow), 0 0 40px var(--title-glow);
+    text-decoration: underline var(--text-accent);
+    text-decoration-thickness: 0.25rem;
+}
+
+.text {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    margin-left: -0.1ch;
+    margin-bottom: 1rem;
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 4rem 4rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    max-width: 75rem;
+}
+
+@media screen and (max-width: 850px) {
+    .aboutInfoContainer {
+        width: 100%;
+        margin-top: 4rem;
+        order: 2;
+    }
+
+    .sectionContainer {
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .aboutInfoContainer {
+        width: 100%;
+        margin-top: 1rem;
+        order: 2;
+    }
+
+    .aboutImg {
+        order: 2;
+        max-width: 100%;
+    }
+}

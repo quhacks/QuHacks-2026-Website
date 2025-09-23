@@ -1,0 +1,221 @@
+.navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(0, 41, 0, 0.4);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    align-items: center;
+    border-bottom: 1px solid var(--text-accent);
+    height: 4rem;
+    z-index: 10;
+}
+.mobileLinks {
+    position: fixed;
+    top: 3rem;
+    /*background-color: var(--background-darker);*/
+    background-color: rgba(0, 41, 0, 0.2);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cmd {
+    font-family: monospace;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.size {
+    font-family: monospace;
+    font-size: 1rem;
+    color: var(--text-accent);
+}
+
+.spacer {
+    flex: 1;
+    border-bottom: 1px dotted white;
+    margin: 0 5px;
+}
+
+.cmd > span {
+    color: var(--text-accent);
+}
+
+.typing {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 1ch solid var(--text-accent); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    width: 15ch;
+    animation: 
+        typing 1.5s steps(15),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 15ch }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--text-accent); }
+}
+
+.linkrow {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-items: left;
+    opacity: 0;
+    animation: showrow 0.5s forwards;
+    animation-delay: 1.5s;
+}
+
+.linkrow:nth-child(1) {
+    animation-delay: 1.6s;
+}
+
+.linkrow:nth-child(2) {
+    animation-delay: 1.8s;
+}
+
+.linkrow:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.linkrow:nth-child(4) {
+    animation-delay: 2.2s;
+}
+
+.linkrow:nth-child(5) {
+    animation-delay: 2.4s;
+}
+
+.linkrow:nth-child(6) {
+    animation-delay: 2.6s;
+}
+
+.linkrow:nth-child(7) {
+    animation-delay: 2.8s;
+}
+
+@keyframes showrow {
+    from {display: none; opacity: 0;}
+    to {display: flex; opacity: 1;}
+}
+
+
+.name {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: var(--text);
+    transition: 0;
+    margin-right: auto;
+}
+
+.moreBtn {
+    display: none;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    color: var(--text-accent);
+    font-size: 1.5rem;
+}
+
+.moreBtn:active {
+    opacity: 0.75;
+}
+
+.moreBtn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cursor {
+    margin-left: 0.5rem;
+    animation: blink-cursor .75s step-end infinite;
+}
+
+@keyframes blink-cursor {
+    from, to { opacity: 0; }
+    50% { opacity: 100; }
+}
+
+/* .name {
+    font-family: var(--nc-font-mono);
+} */
+
+.name>span {
+    color: var(--text-accent);
+    margin-right: 0.5rem;
+    /* font-family: var(--nc-font-mono); */
+}
+
+.name:hover {
+    color: var(--text);
+    background: none;
+}
+
+.mobnavlink {
+    padding: 0 !important;
+    font-size: 1rem !important;
+}
+
+.mobnavlink:hover {
+    text-decoration: underline !important;
+    background: none !important;
+}
+
+
+.navlink {
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 750px) {
+    .navbar {
+        height: 3rem;
+    }
+
+    .moreBtn {
+        display: block;
+        padding: 0;
+        font-size: 1rem;
+        font-family: monospace;
+    }
+
+    .name {
+        font-size: 1.25rem;
+        padding: 0;
+    }
+
+    .name>span:nth-child(2) {
+        display: none;
+    }
+
+    .navlink {
+        display: none;
+        font-size: 0.75rem;
+        padding: 0.25rem;
+    }
+
+    .cursor {
+        margin-left: 0.25rem;
+    }
+
+    .navbar {
+        gap: 0.1rem;
+        padding: 0.5rem
+    }
+}
+

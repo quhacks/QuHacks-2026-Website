@@ -1,0 +1,52 @@
+.card {
+    width: 13rem;
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border: 2px solid #F72585;
+    background: hsl(242, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 1.23rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.position {
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+    color: #cdcbcb;
+}
+
+@media screen and (max-width: 750px) {
+    .card {
+        flex-direction: row;
+        width: 100%;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .image {
+        width: 7rem;
+        height: 7rem;
+        object-fit: cover;
+        flex-grow: 1;
+    }
+
+    .text {
+        width: 100%;
+        text-align: left;
+    }
+}

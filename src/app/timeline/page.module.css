@@ -1,0 +1,148 @@
+
+.content {
+    background-color: var(--background);
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+    padding: 2rem;
+    padding-left: 0;
+}
+
+.headContainer {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    background: linear-gradient(0deg,  rgb(0, 0, 0), var(--image-hue-overlay) 80%,  var(--image-hue-overlay) 100%), url("/timeline/pic2019-1.jpg"); 
+    background-size: cover;
+    padding: 2rem;
+    height: 30rem;
+}
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding-bottom: 0;
+}
+
+.headtext {
+    max-width: 50rem;
+}
+
+
+.headtext > h1 {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-family: monospace;
+    text-shadow: 0 0 10px var(--title-glow), 0 0 15px var(--title-glow), 0 0 20px var(--title-glow), 0 0 25px var(--title-glow), 0 0 30px var(--title-glow), 0 0 35px var(--title-glow), 0 0 40px var(--title-glow);
+}
+
+.headtext > p {
+    font-size: 1.5rem;
+}
+
+.qh {
+    text-align: center;
+    font-size: 10rem;
+    font-weight: 100;
+    opacity: 50%;
+    flex-grow: 1;
+}
+
+.timeline {
+    margin-top: 2rem;
+    padding-left: 75px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.timeline:before {
+    content: ' ';
+    background: var(--text-accent);
+    display: inline-block;
+    position: absolute;
+    left: 35px;
+    width: 2px;
+    height: 100%;
+    z-index: 5;
+}
+
+.timelineCard {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid var(--text-accent);
+    flex-direction: row;
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid var(--text-accent);
+}
+
+.imgContainer > img {
+    object-fit: cover;
+    max-width: 20rem;
+    height: 100%;
+}
+
+.textContainer {
+    padding: 1rem;
+}
+
+.leftContainer {
+    flex-grow: 1;
+}
+
+.cardHeader {
+    width: 100%;
+    background-color: var(--text-accent);
+    color: black;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: monospace;
+}
+
+.timelineCard::before {
+    content: ' ';
+    background: black;
+    border: 2px solid var(--text-accent);
+    display: inline-block;
+    position: absolute;
+    margin-top: 25px;
+    left: 26px;
+    width: 15px;
+    height: 15px;
+    z-index: 5;
+}
+
+@media screen and (max-width: 850px) {
+    .head {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .headtext > h1 {
+        font-size: 3rem;
+    }
+    
+    .headtext > p {
+        font-size: 1.25rem;
+    }
+
+    .imgContainer > img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .timelineCard {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,122 @@
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-family: monospace;
+    text-shadow: 0 0 10px var(--title-glow), 0 0 15px var(--title-glow), 0 0 20px var(--title-glow), 0 0 25px var(--title-glow), 0 0 30px var(--title-glow), 0 0 35px var(--title-glow), 0 0 40px var(--title-glow);
+    text-decoration: underline var(--text-accent);
+    text-decoration-thickness: 0.25rem;
+}
+
+.sponsorCall {
+    background-color: var(--background-darker);
+    border-left: 0.5rem solid var(--text-accent);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.sponsorCall > p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.text {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    margin-left: -0.1ch;
+    margin-bottom: 1rem;
+}
+
+.tier {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;   
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.row > a > img {
+    width: auto;
+    max-height: 9rem;
+    max-width: 100%;
+}
+
+.row > a:hover {
+    background-color: transparent;
+}
+
+.platinum {
+    background: linear-gradient(315deg, rgb(170, 170, 170, 0.5),  rgb(133, 133, 133, 0.5) 100%);
+    border-left: 0.5rem solid white;
+}
+
+.platinum > div > img {
+    height: 10rem;
+}
+
+.platinum {
+    background: linear-gradient(315deg, rgba(37, 228, 241, 0.747),  rgba(193, 190, 218, 0.795) 100%);
+    border-left: 0.5rem solid lightblue;
+}
+
+.gold {
+    background: linear-gradient(315deg, rgb(160, 157, 0, 0.5),  rgb(190, 146, 0, 0.5) 100%);
+    border-left: 0.5rem solid yellow;
+}
+
+.silver {
+    background: linear-gradient(315deg, rgb(155, 155, 155, 0.5),  rgb(104, 104, 104, 0.5) 100%);
+    border-left: 0.5rem solid grey;
+}
+
+.bronze {
+    background: linear-gradient(315deg, rgb(190, 102, 0, 0.5),  rgb(133, 86, 0, 0.5) 100%);
+    border-left: 0.5rem solid #b08d57;
+}
+
+.mediaPartner {
+    background: linear-gradient(315deg, rgba(109, 219, 99, 0.5),  rgba(52, 209, 83, 0.5) 100%);
+    border-left: 0.5rem solid lightgreen;
+}
+
+.bronze > .row > a > img, .mediaPartner > .row > a > img {
+    max-height: 7rem;
+}
+
+
+.tier > h1 {
+    font-size: 2rem;
+}
+
+.sectionContainer {
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+    .sectionContainer {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row > a > img {
+        max-width: 100%;
+        height: auto;
+    }
+}
