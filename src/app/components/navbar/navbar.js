@@ -45,7 +45,7 @@ export default function NavBar() {
   return (
     <main>
     <nav className={styles.navbar}>
-      <Link href='/' className={styles.name}><span>$</span>QuHacks 2025<span className={styles.cursor}>█</span></Link>
+      <Link href='/' className={styles.name}><span>$</span>QuHacks 2026<span className={styles.cursor}>█</span></Link>
 
       <button className={styles.moreBtn} onClick={toggleLinks}>[menu]</button>
       <span className={`link ${styles.navlink}`} onClick={() => scrollIntoViewWithOffset("#about",100)}>About</span>
