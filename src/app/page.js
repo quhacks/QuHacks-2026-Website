@@ -56,7 +56,7 @@ export default function Home() {
           <Image alt='QuHacks Logo' src="logo.png" width={100} height={100} sizes='(max-width: 750px) 15rem, 20rem' className={styles.logo} />
           <div>
             <span className={styles.title}>QuHacks 2026</span>
-            <p>TBD Date @ TBD Location</p>
+            <p>February 7th @ Howard Community College (HCC)</p>
             <div className={styles.btngroup}>
               {/* Logic for register: onClick={() => setShowRegisterModal(true)} */}
               <button className='btn-primary' disabled={true} onClick={() => {window.open("https://forms.gle/ftydZZZT9pJXh1KV7", '_blank', 'noopener, noreferrer');}}>Register To Attend!</button>

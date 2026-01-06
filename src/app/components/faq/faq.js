@@ -36,7 +36,7 @@ export default function Faq() {
                     />
                     <FaqQuestion 
                         question={"Where is QuHacks?"} 
-                        answer={`QuHacks 2026's location is currently being determined and will be released as soon as possible!`}
+                        answer={`QuHacks 2026 will be held at the Duncan Hall in Howard Community College. Duncan Hall is located at 6040 Scholarship Dr, Columbia, MD 21044!`}
                     />
                     <FaqQuestion 
                         question={"Can I use past projects?"} 

@@ -3,7 +3,7 @@ import styles from "./component.module.css"
 export default function Sponsors() {
     return (
         <div className={styles.sectionContainer}>
-            <h1 className={styles.title}>2025 Sponsors</h1>
+            <h1 className={styles.title}>2026 Sponsors</h1>
             <div className={styles.sponsorCall}>
                 <p>Interested in sponsoring QuHacks this year? <a href="mailto:info@quhacks.tech">Contact us!</a></p>
             </div>
@@ -11,29 +11,29 @@ export default function Sponsors() {
             <div className={`${styles.tier} ${styles.platinum}`}>
                 <h1 className={styles.tiername}>Platinum</h1>
                 <div className={styles.row}>
-                    <a rel="noreferrer noopener" target='_blank' href="https://mdspace.org">
-                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/msbr.png" />
+                    <a rel="noreferrer noopener" target='_blank' href="https://solana.org/">
+                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/solana_foundation.png" />
                     </a>
                 </div>
             </div>
 
-            <div className={`${styles.tier} ${styles.gold}`}>
+            {/* <div className={`${styles.tier} ${styles.gold}`}>
                 <h1 className={styles.tiername}>Gold</h1>
                 <div className={styles.row}>
                     <a rel="noreferrer noopener" target='_blank' href="https://www.issi-software.com/">
                         <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/issi.png" />
                     </a>
                 </div>
-            </div>
+            </div> */}
 
             <div className={`${styles.tier} ${styles.silver}`}>
                 <h1 className={styles.tiername}>Silver</h1>
                 <div className={styles.row}>
-                    <a rel="noreferrer noopener" target='_blank' href="https://www.wolfram.com/">
+                    {/* <a rel="noreferrer noopener" target='_blank' href="https://www.wolfram.com/">
                         <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px", maxHeight: "7.7rem"}} src="sponsors/wolfram.png" />
-                    </a>
-                    <a rel="noreferrer noopener" target='_blank' href="https://www.mathworks.com/">
-                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/mathworks.png" />
+                    </a> */}
+                    <a rel="noreferrer noopener" target='_blank' href="https://www.wegmans.com/">
+                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/wegmans.png" />
                     </a>
                 </div>
             </div>
@@ -50,41 +50,23 @@ export default function Sponsors() {
                     <a rel="noreferrer noopener" target='_blank' href="https://codehs.com/">
                         <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/codehs.png" />
                     </a>
-                    <a rel="noreferrer noopener" target='_blank' href="https://www.desmos.com/">
-                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/desmos.png" />
-                    </a>
                     <a rel="noreferrer noopener" target='_blank' href="https://www.interviewcake.com/">
                         <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/interview_cake.png" />
                     </a>
-                    <a rel="noreferrer noopener" target='_blank' href="https://gen.xyz/">
-                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/xyz.png" />
-                    </a>
-                    <a rel="noreferrer noopener" target='_blank' href="https://www.wegmans.com/">
-                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/wegmans.jpg" />
-                    </a>
-                    <a rel="noreferrer noopener" target='_blank' href="http://chipotle.com">
+                    {/* <a rel="noreferrer noopener" target='_blank' href="http://chipotle.com">
                         <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/chipotle.png" />
-                    </a>
+                    </a> */}
                 </div>
             </div>
 
-            <div className={`${styles.tier} ${styles.mediaPartner}`}>
+            {/* <div className={`${styles.tier} ${styles.mediaPartner}`}>
                 <h1 className={styles.tiername}>Partner</h1>
                 <div className={styles.row}>
-                    <a rel="noreferrer noopener" target='_blank' href="https://devitjobs.com/">
-                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/devitjobs.png" />
-                    </a>
-                    <a rel="noreferrer noopener" target='_blank' href="http://jumbojumbocafe.com">
-                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/jumbojumbo.png" />
-                    </a>
-                    <a rel="noreferrer noopener" target='_blank' href="https://klinn.works">
-                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/klinn.png" />
-                    </a>
                     <a rel="noreferrer noopener" target='_blank' href="https://chspyoneers.com/">
                         <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/pyoneers.png" />
                     </a>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
