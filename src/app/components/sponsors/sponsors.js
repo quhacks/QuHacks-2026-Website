@@ -47,11 +47,17 @@ export default function Sponsors() {
                     <a rel="noreferrer noopener" target='_blank' href="https://artofproblemsolving.com/">
                         <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/aops.png" />
                     </a>
+                    <a rel="noreferrer noopener" target='_blank' href="https://www.jumbojumbocafe.com/">
+                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/jumbo_jumbo.png" />
+                    </a>
                     <a rel="noreferrer noopener" target='_blank' href="https://codehs.com/">
                         <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/codehs.png" />
                     </a>
                     <a rel="noreferrer noopener" target='_blank' href="https://www.interviewcake.com/">
                         <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/interview_cake.png" />
+                    </a>
+                    <a rel="noreferrer noopener" target='_blank' href="https://www.coca-cola.com/us/en">
+                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/coca_cola.png" />
                     </a>
                     {/* <a rel="noreferrer noopener" target='_blank' href="http://chipotle.com">
                         <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/chipotle.png" />
