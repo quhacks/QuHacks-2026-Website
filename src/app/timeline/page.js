@@ -14,13 +14,25 @@ export default function Timeline() {
                 <div className={styles.timeline}>
                     <div className={styles.timelineCard}>
                         <div className={styles.imgContainer}>
+                            <img src="timeline/pic-2025.jpg" />
+                        </div>
+                        <div className={styles.leftContainer}>
+                            <header className={styles.cardHeader}>QuHacks 2025</header>
+                            <div className={styles.textContainer}>
+                                Held at the Johns Hopkins University Applied Physics Laboratory on December 14th, 2024.
+                                Similar to QuHacks 2024, over 120 attendees competed with interesting projects for prizes within the beginner, advanced, and AI tracks! Additionally, during the event, we held workshops teaching Python, AI, web development, and cryptography, and ended with a Monkeytype competition as per tradition.
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.timelineCard}>
+                        <div className={styles.imgContainer}>
                             <img src="timeline/pic-2024.png" />
                         </div>
                         <div className={styles.leftContainer}>
                             <header className={styles.cardHeader}>QuHacks 2024</header>
                             <div className={styles.textContainer}>
                                 Held at the Johns Hopkins University Applied Physics Laboratory on December 16th, 2023. Our biggest event yet!
-                                Over 150 attendees submitted amazing projects to compete for prizes within AI, math, game dev, beginner, and advanced tracks! During the event, we held workshops teaching Python, web development, and cryptography, and ended with a Monkeytype competition as per tradition.
+                                Over 130 attendees submitted amazing projects to compete for prizes within AI, math, game dev, beginner, and advanced tracks! During the event, we held workshops teaching Python, web development, and cryptography, and ended with a Monkeytype competition as per tradition.
                             </div>
                         </div>
                     </div>
