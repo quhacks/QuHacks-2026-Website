@@ -5,7 +5,7 @@
     gap: 1rem;
     width: 100%;
     padding: 1rem;
-    background-color: rgba(0, 41, 0, 0.4);
+    background-color: rgba(0, 0, 41, 0.4);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     align-items: center;
