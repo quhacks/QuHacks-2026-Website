@@ -61,8 +61,8 @@ export default function Home() {
               {/* Logic for register: onClick={() => setShowRegisterModal(true)} */}
               <button className='btn-primary' disabled={true} onClick={() => {window.open("https://forms.gle/pvYGmoQvUrAeb15a8", '_blank', 'noopener, noreferrer');}}>Register To Attend!</button>
               <div className={styles.secondaryBtns}>
-                <button className={`btn-secondary ${styles.submitBtn}`} onClick={() => {window.open("https://quhacks-2026.devpost.com/", '_blank', 'noopener, noreferrer');}} disabled={!submbissionsOpen}>Submit Your Project!</button>
-                <button className={`btn-secondary ${styles.galleryBtn}`} onClick={() => router.push("/gallery")} disabled={!galleryOpen}>View Gallery &gt;</button>
+                <button className={`btn-secondary ${styles.submitBtn}`} onClick={() => {window.open("https://quhacks-2026.devpost.com/", '_blank', 'noopener, noreferrer');}} disabled={false /*!submbissionsOpen*/}>View Devpost</button>
+                <button className={`btn-secondary ${styles.galleryBtn}`} onClick={() => {window.open("https://quhacks-2026.devpost.com/project-gallery");}} disabled={!galleryOpen}>View Gallery &gt;</button>
               </div>
             </div>
           </div>
