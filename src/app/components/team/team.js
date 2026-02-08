@@ -6,7 +6,7 @@ export default function TeamSection() {
     let teamCards = [
         // Director
         ["Sai Chandra", "Director", "headshots/sai_headshot.jpg"],
-        ["Joshua Oh", "Director", "headshots/joshua_headshot.jpeg"],
+        ["Joshua Oh", "Director", "headshots/joshua_headshot_cropped.jpeg"],
 
         // Graphic Design
         
@@ -16,6 +16,7 @@ export default function TeamSection() {
         
         // Sponsor
         ["Rana Cherukuri", "Sponsor Lead", "headshots/rana_headshot_cropped.jpeg"],
+        ["Daniel Gao", "Sponsor", "headshots/daniel_headshot_cropped.jpg"],
         ["Evan Luo", "Sponsor", "headshots/evan_headshot_cropped.jpeg"],
         
         // Website 
