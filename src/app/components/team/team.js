@@ -5,33 +5,40 @@ import Link from 'next/link';
 export default function TeamSection() {
     let teamCards = [
         // Director
-        ["Sai Chandra", "Director", "headshots/sai_headshot.jpg"],
-        ["Joshua Oh", "Director", "headshots/joshua_headshot_cropped.jpeg"],
+        ["Ankit Mohanty", "Director", "headshots/ankit_headshot.png"],
+        ["Jayson Liu", "Director", "headshots/jayson_headshot.jpg"],
+
+
+        // Outreach
+        ["Nicholas Chen", "Outreach Lead", "headshots/nicholas_headshot.jpg", "center %"],
+        ["Minul Wehella-Gamage", "Outreach", "headshots/minul_headshot.jpg", "center 5%"],
+
+        // Sponsor
+        ["Evan Luo", "Sponsor Lead", "headshots/evan_headshot_cropped.jpeg"],
+        ["Roshan Gopi", "Sponsor", "headshots/roshan_headshot.jpg"],
+
+        // Website
+        ["Zachary Schmelzer", "Website", "headshots/zachary_headshot.jpg"],
+        ["Ehaan Akbar", "Website", "headshots/ehaan_headshot.jpg"],
+        ["Vrukshav Viswanath", "Website", "headshots/vrukshav_headshot.jpg"],
+
 
         // Graphic Design
-        
-        // Outreach
-        ["Aditri Maiti", "Outreach Lead", "headshots/aditri_headshot_cropped.jpg"],
-        ["Jeremy Tao", "Outreach", "headshots/jeremy_headshot_cropped.jpg"],
-        
-        // Sponsor
-        ["Rana Cherukuri", "Sponsor Lead", "headshots/rana_headshot_cropped.jpeg"],
-        ["Daniel Gao", "Sponsor", "headshots/daniel_headshot_cropped.jpg"],
-        ["Evan Luo", "Sponsor", "headshots/evan_headshot_cropped.jpeg"],
-        
-        // Website 
-        ["Ankit Mohanty", "Website", "headshots/ankit_headshot_cropped.png"],
-        ["Navya Rachakonda", "Website", "headshots/navya_headshot_cropped.png"],
-
+        ["Rudra Jhawar", "Graphics Lead", "headshots/rudra_headshot.png"],
+        ["Skanda Rajkumar", "Graphics", "headshots/skanda_headshot.jpg"],
         // Workshop
-        ["Suhas Anumolu", "Workshop Lead", "headshots/suhas_headshot.jpg"],
-        ["Jayson Liu", "Workshop", "headshots/jayson_headshot.jpg"],
         ["Tarinika Pawar", "Workshop", "headshots/tarinika_headshot_cropped.jpg"],
     ]
 
     teamCards = teamCards.map((card) => {
         return (
-            <TeamCard name={card[0]} position={card[1]} image={card[2]} key={card[0]} />
+            <TeamCard
+                name={card[0]}
+                position={card[1]}
+                image={card[2]}
+                objectPosition={card[3]}
+                key={card[0]}
+            />
         )
     });
 
