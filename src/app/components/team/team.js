@@ -10,7 +10,7 @@ export default function TeamSection() {
 
 
         // Outreach
-        ["Nicholas Chen", "Outreach Lead", "headshots/nicholas_headshot.jpg", "center %"],
+        ["Nicholas Chen", "Outreach Lead", "headshots/nicholas_headshot.jpg", "center 10%"],
         ["Minul Wehella-Gamage", "Outreach", "headshots/minul_headshot.jpg", "center 5%"],
 
         // Sponsor
