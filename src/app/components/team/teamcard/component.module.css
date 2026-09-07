@@ -34,20 +34,29 @@
 .name {
     width: 100%;
     font-size: clamp(0.9rem, 1vw, 1rem);
-    font-weight: bold;
-    margin: 0.5rem 0;
+    font-family: var(--font-team-name), sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0.75rem 0 0.35rem;
     letter-spacing: -0.02em;
     white-space: nowrap;
 }
 
 .position {
-    font-size: 0.95rem;
-    margin: 0.5rem 0;
+    font-size: 0.85rem;
+    font-family: var(--font-team-position), monospace;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0.35rem 0 0.5rem;
+    letter-spacing: 0.015em;
     color: #cdcbcb;
 }
 
 .text {
     width: 100%;
+    padding-top: 0.25rem;
 }
 
 @media screen and (max-width: 750px) {
