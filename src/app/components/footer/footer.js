@@ -23,6 +23,7 @@ export default function Footer() {
             Aryan Sharma<br/>
             Ramy Kaddouri<br/>
             Nicole Luo<br/>
+            Ankit Mohanty <br/>
             </p>
         </div>
     </main>
