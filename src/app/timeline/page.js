@@ -1,4 +1,11 @@
 import styles from "./page.module.css"
+import { pageMetadata } from '../../lib/seo';
+
+export const metadata = pageMetadata(
+    'QuHacks History | Maryland Student Hackathon',
+    'Explore past QuHacks events, student projects, and workshops from our Maryland hackathon for middle and high school students.',
+    '/timeline',
+);
 
 export default function Timeline() {
     return (
