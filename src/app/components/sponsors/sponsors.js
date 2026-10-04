@@ -9,17 +9,27 @@ const sponsors = [
   ['Interview Cake', 'interview_cake.png', 'https://www.interviewcake.com/', 'Bronze'],
   ['Coca-Cola', 'coca_cola.png', 'https://www.coca-cola.com/us/en', 'Bronze'],
 ];
+
+const tiers = ['Platinum', 'Silver', 'Bronze'];
+
 export default function Sponsors() {
   return (
     <div className={styles.sectionContainer}>
       <h3>Thank you to our 2026 sponsors!</h3>
-      <div className={styles.grid}>
-        {sponsors.map(([name, file, url, tier]) => (
-          <a key={name} href={url} target="_blank" rel="noopener noreferrer" aria-label={`${name}, 2026 ${tier} sponsor`}>
-            <img src={`/sponsors/${file}`} alt={name} loading="lazy" />
-          </a>
-        ))}
-      </div>
+      {tiers.map(tier => (
+        <section key={tier} className={`${styles.tier} ${styles[tier.toLowerCase()]}`} aria-labelledby={`sponsor-tier-${tier.toLowerCase()}`}>
+          <h4 id={`sponsor-tier-${tier.toLowerCase()}`} className={styles.tierHeading}>
+            <span aria-hidden="true">✦</span> {tier}
+          </h4>
+          <div className={styles.grid}>
+            {sponsors.filter(sponsor => sponsor[3] === tier).map(([name, file, url]) => (
+              <a key={name} href={url} target="_blank" rel="noopener noreferrer" aria-label={`${name}, 2026 ${tier} sponsor`}>
+                <img src={`/sponsors/${file}`} alt={name} loading="lazy" />
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
     </div>
   );
 }

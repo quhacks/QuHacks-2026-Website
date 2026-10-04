@@ -26,9 +26,15 @@
   color: #fff4c9;
 }
 .brand svg { width: 39px; height: 39px; }
+.brand svg { transition: transform .2s; }
+.brand:hover svg { transform: rotate(-12deg) scale(1.08); }
 .links { display: flex; align-items: center; gap: 27px; }
 .links a { padding: 12px 0; font-size: 15px; font-weight: 600; color: #f1ecd2; }
 .links a:hover { color: #ffdb76; }
+.links a { position: relative; }
+.links a::after { content: ''; position: absolute; bottom: 5px; left: 0; right: 0; height: 2px; background: #ffdb76; transform: scaleX(0); transition: transform .2s; }
+.links a[aria-current] { color: #ffdb76; }
+.links a[aria-current]::after, .links a:hover::after { transform: scaleX(1); }
 .menuButton { display: none; }
 @media (max-width: 960px) {
   .navbar { height: 64px; padding: 0 23px; }

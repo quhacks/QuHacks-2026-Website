@@ -18,7 +18,7 @@ export default function Footer() {
           <a href="https://hcb.hackclub.com/donations/start/quhacks" target="_blank" rel="noopener noreferrer">Donate</a>
         </div>
         <p>Made by students, for students. © QuHacks 2027</p>
-        <small>Website contributors: Sai Siddhish Chandra Sekaran, Aryan Sharma, Ramy Kaddouri, and Nicole Luo.</small>
+        <small>Website contributors: Ankit Mohanty, Sai Siddhish Chandra Sekaran, Aryan Sharma, Ramy Kaddouri, and Nicole Luo.</small>
       </div>
     </footer>
   );

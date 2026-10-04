@@ -1,10 +1,44 @@
-.sectionContainer { margin-top: 22px; }
-.sectionContainer h3 { font-size: 20px; color: #f7edc3; margin: 0 0 20px; }
-.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px 35px; padding: 32px; background: #fff; border-radius: 14px; }
-.grid a { min-width: 0; display: flex; align-items: center; justify-content: center; padding: 8px; border-radius: 6px; }
-.grid a:hover { background: #edf2e7; }
+.sectionContainer { margin-top: 24px; }
+.sectionContainer h3 { font-size: 19px; font-weight: 400; color: #e0edda; margin: 0 0 30px; }
+.tier { --tier-color: #d9ebd5; margin-top: 24px; }
+.platinum { --tier-color: #cde8d8; }
+.silver { --tier-color: #d2dbe2; }
+.bronze { --tier-color: #e7b886; }
+.tierHeading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--tier-color);
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+.tierHeading::after { content: ''; height: 1px; flex: 1; margin-left: 8px; background: var(--tier-color); opacity: .3; }
+.tierHeading span { font-size: 18px; }
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px 45px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 16px;
+  border-top: 3px solid var(--tier-color);
+}
+.grid a { display: flex; align-items: center; justify-content: center; padding: 10px; border-radius: 8px; transition: background .2s, transform .2s; }
+.grid a:hover { background: #edf2e7; transform: translateY(-2px); }
 .grid img { width: 100%; height: 55px; object-fit: contain; }
+.platinum .grid a { width: 330px; max-width: 100%; }
+.platinum .grid img { height: 76px; }
+.silver .grid a { width: 245px; max-width: 100%; }
+.silver .grid img { height: 65px; }
+.bronze .grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+.bronze .grid a { min-width: 0; }
 @media (max-width: 700px) {
-  .grid { grid-template-columns: 1fr 1fr; gap: 22px; padding: 25px 20px; }
-  .grid img { height: 45px; }
+  .grid { padding: 20px; gap: 20px; }
+  .platinum .grid a { width: 275px; }
+  .silver .grid a { width: 205px; }
+  .bronze .grid { grid-template-columns: repeat(2, 1fr); gap: 18px 20px; }
+  .bronze .grid img { height: 45px; }
 }

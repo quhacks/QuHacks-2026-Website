@@ -1,18 +1,29 @@
 .card { min-width: 0; text-align: center; }
 .imageContainer {
-  width: 96px;
-  height: 96px;
+  width: 140px;
+  height: 140px;
   margin: 0 auto;
+  padding: 5px;
   overflow: hidden;
-  background: #285744;
+  background: #234f3e;
   border-radius: 50%;
-  border: 3px solid #93b575;
+  border: 2px solid #a7bd7d;
+  box-shadow: 0 5px 16px #082a2433;
 }
-.image { width: 100%; height: 100%; object-fit: cover; display: block; }
-.name { font-size: 14px; line-height: 1.35; font-weight: 700; margin: 12px 0 5px; color: #fbf1cc; }
-.card .position { font-family: inherit; font-size: 12px; line-height: 1.4; color: #bfceba; margin: 0; }
-@media (max-width: 550px) {
-  .imageContainer { width: 78px; height: 78px; }
-  .name { font-size: 12px; }
-  .card .position { font-size: 11px; }
+.image { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 50%; }
+.imageContainer { transition: transform .2s, border-color .2s; }
+.card:hover .imageContainer { transform: translateY(-5px) rotate(-2deg); border-color: #ffe08a; }
+.placeholder { height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 3px; background: #376349; border-radius: 50%; color: #ffe08a; }
+.placeholder > span { font-size: 42px; font-weight: 700; }
+.placeholder small { font-size: 11px; color: #edf1d6; }
+.name { font-size: 15px; line-height: 1.35; font-weight: 700; margin: 15px 0 5px; color: #fbf1cc; }
+.card .position { font-family: inherit; font-size: 13px; line-height: 1.4; color: #bfceba; margin: 0; }
+@media (max-width: 700px) {
+  .imageContainer { width: 112px; height: 112px; padding: 4px; }
+  .name { font-size: 14px; }
+  .card .position { font-size: 12px; }
+}
+@media (max-width: 360px) {
+  .imageContainer { width: 98px; height: 98px; }
+  .name { font-size: 13px; }
 }

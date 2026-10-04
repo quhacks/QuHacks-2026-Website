@@ -1,7 +1,6 @@
 .sectionContainer { width: 100%; }
 .title { margin-bottom: 12px !important; }
-.intro { margin-bottom: 32px !important; }
-.cards { display: grid; grid-template-columns: repeat(6, 1fr); gap: 32px 18px; }
-@media (max-width: 900px) { .cards { grid-template-columns: repeat(4, 1fr); } }
-@media (max-width: 550px) { .cards { grid-template-columns: repeat(3, 1fr); gap: 26px 10px; } }
-@media (max-width: 360px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+.intro { margin-bottom: 35px !important; }
+.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 36px 24px; }
+@media (max-width: 800px) { .cards { grid-template-columns: repeat(3, 1fr); gap: 32px 18px; } }
+@media (max-width: 550px) { .cards { grid-template-columns: repeat(2, 1fr); gap: 30px 16px; } }

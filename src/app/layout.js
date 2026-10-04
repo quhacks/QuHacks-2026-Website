@@ -1,11 +1,15 @@
 import './globals.css';
 import NavBar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
+import { homeTitle, homeDescription, siteUrl } from '../lib/seo';
 
 export const metadata = {
-  title: 'QuHacks 2027 | 10th Anniversary Hackathon',
-  description: 'QuHacks is a free, student-run hackathon for middle and high school students. Join us in 2027 for our 10th anniversary!',
-  metadataBase: new URL('https://quhacks.tech'),
+  title: homeTitle,
+  description: homeDescription,
+  metadataBase: new URL(siteUrl),
+  icons: {
+    icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
+  },
 };
 
 export default function RootLayout({ children }) {

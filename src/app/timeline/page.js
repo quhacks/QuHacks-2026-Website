@@ -1,4 +1,11 @@
 import styles from "./page.module.css"
+import { pageMetadata } from '../../lib/seo';
+
+export const metadata = pageMetadata(
+    'QuHacks History | Maryland Student Hackathon',
+    'Explore past QuHacks events, student projects, and workshops from our Maryland hackathon for middle and high school students.',
+    '/timeline',
+);
 
 export default function Timeline() {
     return (
@@ -6,7 +13,6 @@ export default function Timeline() {
             <div className={styles.headContainer}>
                 <div className={styles.head}>
                     <div className={styles.headtext}>
-                        <p className="eyebrow">TEN YEARS OF IDEAS, PEOPLE &amp; IMPACT</p>
                         <h1>Our story.</h1>
                     </div>
                 </div>

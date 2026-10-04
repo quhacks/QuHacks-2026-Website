@@ -5,28 +5,40 @@ import Sponsors from './components/sponsors/sponsors';
 import Faq from './components/faq/faq';
 import Freddy from './components/freddy';
 import JungleVines from './components/jungleVines';
+import { homeTitle, homeDescription, homeStructuredData, pageMetadata } from '../lib/seo';
+
+export const metadata = pageMetadata(homeTitle, homeDescription, '/');
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <section className={styles.hero} aria-labelledby="hero-title">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeStructuredData).replace(/</g, '\\u003c') }}
+      />
+      <section id="welcome" className={styles.hero} aria-labelledby="hero-title">
         <img className={styles.jungle} src="/theme/jungle.png" alt="" fetchPriority="high" />
         <div className={styles.heroContent}>
-          <p className={styles.anniversary}>Our 10th anniversary!</p>
+          <p className={styles.anniversary}>10 years of building together</p>
           <h1 id="hero-title">QuHacks <span>2027</span></h1>
-          <p className={styles.subtitle}>A hackathon for middle &amp; high school students</p>
-          <p className={styles.eventDetails}>Free to attend · All experience levels welcome</p>
+          <p className={styles.subtitle}>Build something wild.</p>
+          <p className={styles.eventDetails}>A free Maryland hackathon for middle &amp; high school students.</p>
           <div className={styles.heroButtons}>
-            <button className="btn-primary" disabled>Registration coming soon</button>
-            <a className="btn-secondary" href="https://discord.gg/qYND4HeAdH" target="_blank" rel="noopener noreferrer">Join our Discord</a>
+            <a className="btn-primary" href="#about">Explore QuHacks</a>
+            <a className="btn-secondary" href="https://discord.gg/qYND4HeAdH" target="_blank" rel="noopener noreferrer">
+              Join our Discord
+            </a>
           </div>
-          <p className={styles.dateNote}>2027 date &amp; location to be announced</p>
+          <p className={styles.dateNote}>Registration opens soon · Follow along on Discord</p>
         </div>
         <div className={styles.heroDuck}>
           <span className={styles.bubble}>see you in the jungle!</span>
           <Freddy />
         </div>
-        <a className={styles.scroll} href="#about" aria-label="Scroll to About QuHacks">↓</a>
+        <div className={styles.heroFooter}>
+          <p className={styles.eventStatus}>Date &amp; location to be decided</p>
+          <a className={styles.scroll} href="#about">Enter the jungle <span aria-hidden="true">↓</span></a>
+        </div>
       </section>
 
       <div className={styles.forest}>
@@ -36,7 +48,7 @@ export default function Home() {
           <section className={styles.about} id="about" aria-labelledby="about-title">
             <div>
               <h2 id="about-title">About QuHacks</h2>
-              <p>QuHacks is a free, day-long hackathon run by students, for students. Middle and high schoolers from across the DMV come together to code, try something new, and hang out with people who love making things.</p>
+              <p>QuHacks is a free, day-long Maryland high school hackathon run by students, for students. Middle and high schoolers from across Maryland, Washington, D.C., and Virginia come together to code, try something new, and hang out with people who love making things.</p>
               <p>Work on a project with friends, learn something at a workshop, and show off what you made. Never written a line of code? You’re welcome here too!</p>
               <p>This year, we’re celebrating our <strong>10th anniversary</strong> with a jungle theme (and, of course, our duck Freddy).</p>
               <Link className={styles.inlineLink} href="/timeline">See past QuHacks events →</Link>

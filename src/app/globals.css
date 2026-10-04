@@ -22,7 +22,15 @@
 html  {
   scroll-behavior: smooth;
   scroll-padding-top: 95px;
+  scrollbar-color: #829b69 var(--scroll-primary);
+  scrollbar-width: thin;
 }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--scroll-primary); }
+::-webkit-scrollbar-thumb { background: #829b69; border: 2px solid var(--scroll-primary); border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: #b4c88d; }
+::-webkit-scrollbar-corner { background: var(--scroll-primary); }
 
 body  {
   color: var(--text);
