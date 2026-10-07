@@ -1,6 +1,6 @@
 export const siteUrl = 'https://quhacks.com';
-export const homeTitle = 'QuHacks 2027 | Maryland High School Hackathon';
-export const homeDescription = 'QuHacks is a free, student-run Maryland hackathon for middle and high school students. Celebrate our 10th anniversary in 2027. All experience levels welcome.';
+export const homeTitle = 'QuHacks 2027 | Maryland’s Largest High School Hackathon';
+export const homeDescription = 'Join QuHacks, Maryland’s largest high school hackathon. Free and student-run, welcoming middle and high school students of all experience levels in 2027.';
 
 export function pageMetadata(title, description, path) {
   return {
@@ -42,7 +42,7 @@ export const homeStructuredData = {
       name: 'QuHacks',
       url: `${siteUrl}/`,
       logo: `${siteUrl}/logo.png`,
-      description: 'QuHacks organizes a free, student-run hackathon in Maryland for middle and high school students.',
+      description: homeDescription,
       sameAs: ['https://www.instagram.com/quhacks/'],
     },
   ],

@@ -21,7 +21,7 @@ export default function Home() {
         <div className={styles.heroContent}>
           <p className={styles.anniversary}>10 years of building together</p>
           <h1 id="hero-title">QuHacks <span>2027</span></h1>
-          <p className={styles.subtitle}>Build something wild.</p>
+          <p className={styles.subtitle}>Maryland’s largest high school hackathon</p>
           <p className={styles.eventDetails}>A free Maryland hackathon for middle &amp; high school students.</p>
           <div className={styles.heroButtons}>
             <a className="btn-primary" href="#about">Explore QuHacks</a>

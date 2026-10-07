@@ -13,7 +13,7 @@ Google decides whether to index and rank a page; changes are not immediate and n
 
 ## Content maintenance
 
-- Use “Maryland’s largest high school hackathon” only after organizers confirm the claim and its basis. Add supporting attendance information to the visible page when available, then update the homepage title and description in `src/lib/seo.js` to match.
+- The homepage and shared search metadata use the organizer-requested description “Maryland’s largest high school hackathon,” consistent with QuHacks’ existing largest-student-run-event positioning. Keep this claim accurate and add supporting attendance information when available.
 - Once the 2027 date and venue are confirmed, update the page and add accurate Event structured data. Do not invent a date or location to qualify for event search results.
 - Keep the sitemap limited to public content pages. Admin, judging, and raffle pages use `noindex` metadata and remain crawlable so search engines can read that directive. This is not access control.
 - If the domain changes, update `CNAME` and `siteUrl` together and configure permanent redirects from the old domain through the hosting or domain provider.
