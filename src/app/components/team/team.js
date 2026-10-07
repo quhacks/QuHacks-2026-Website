@@ -28,7 +28,7 @@ export default function TeamSection() {
         // Workshop
         ["Tarinika Pawar", "Workshop", "headshots/tarinika_headshot_cropped.jpg"],
         // Amanda: replace null with "headshots/amanda_headshot.jpg" when ready.
-        ["Amanda", "Workshop", "headshots/amanda_headshot.png"],
+        ["Amanda Swentek", "Workshop", "headshots/amanda_headshot.png"],
     ]
 
     teamCards = teamCards.map((card) => {
