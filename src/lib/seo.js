@@ -14,13 +14,13 @@ export function pageMetadata(title, description, path) {
       title,
       description,
       url: path,
-      images: [{ url: '/logo.png', alt: 'QuHacks duck logo' }],
+      images: [{ url: '/quhacks-2027-logo.png', alt: 'QuHacks 2027 duck logo', width: 128, height: 128, type: 'image/png' }],
     },
     twitter: {
       card: 'summary',
       title,
       description,
-      images: ['/logo.png'],
+      images: ['/quhacks-2027-logo.png'],
     },
   };
 }
@@ -41,7 +41,7 @@ export const homeStructuredData = {
       '@id': `${siteUrl}/#organization`,
       name: 'QuHacks',
       url: `${siteUrl}/`,
-      logo: `${siteUrl}/logo.png`,
+      logo: `${siteUrl}/quhacks-2027-logo.png`,
       description: homeDescription,
       sameAs: ['https://www.instagram.com/quhacks/'],
     },
