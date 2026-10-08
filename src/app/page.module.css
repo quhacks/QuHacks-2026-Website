@@ -30,8 +30,8 @@
 .heroButtons :global(.btn-secondary) { background: #20543d; border-color: #739064; color: #fff6cf; }
 .heroButtons > a:hover { background: #fff0b7; color: #173f30; transform: none; }
 .dateNote { margin-top: 18px; font-size: 12px; line-height: 1.6; color: #214c37; }
-.heroDuck { position: absolute; right: max(6%, calc((100% - 1120px) / 2)); bottom: 150px; width: 165px; text-align: center; }
-.heroDuck > svg { display: block; width: 145px; margin: 10px auto 0; transform: rotate(4deg); }
+.heroDuck { position: absolute; right: max(6%, calc((100% - 1120px) / 2)); bottom: 150px; width: 185px; text-align: center; }
+.heroDuck > svg { display: block; width: 175px; height: auto; margin: 4px auto 0; }
 .heroDuck .bubble { font-size: 11px; padding: 9px 12px; }
 .heroFooter { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: min(930px, calc(100% - 64px)); }
 .eventStatus { margin: 0; padding: 20px 0 8px; color: #fff2c7; font-size: 15px; line-height: 1.5; }
@@ -52,7 +52,7 @@
   .heroButtons > * { min-width: 245px; }
   .dateNote { font-size: 11px; }
   .heroDuck { position: relative; right: auto; bottom: auto; margin: 0 auto 25px; }
-  .heroDuck > svg { width: 120px; }
+  .heroDuck > svg { width: 140px; }
   .heroFooter { position: relative; left: auto; bottom: auto; transform: none; width: calc(100% - 40px); margin: 0 auto; }
   .eventStatus { padding-top: 0; font-size: 14px; }
 }

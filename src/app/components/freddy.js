@@ -46,7 +46,9 @@ export default function Freddy({ pose = 'coding' }) {
         <path d="m87 159 12-16" stroke="#c0d58d" strokeWidth="2" />
 
       </g>
-      <DuckHead />
+      <g transform={pose === 'coding' ? 'translate(10.32 13.44) scale(0.88)' : undefined}>
+        <DuckHead />
+      </g>
       {pose === 'coding' && <g stroke="#173f30" strokeWidth="3.5" strokeLinejoin="round">
         <path d="M29 142h96a5 5 0 0 1 5 4l9 43H45Z" fill="#234a3d" />
         <path d="M32 144h89l8 36H41Z" fill="#38614b" stroke="none" />
